@@ -1,0 +1,129 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  transition: background-color 300ms ease-out 0ms;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --red-100: #e9adad;
+  --red-200: #fc5858;
+  --red-300: #d12828;
+  --red-400: #5c1d05;
+  --green-100: #a6d6aa;
+  --green-200: #26572a;
+  --lavender-100: #490fee;
+  --lavender-200: #4542f7;
+  --lavender-300: #6360fa;
+  --lavender-400: #908efd;
+  --gray-100: #ffffff;
+  --gray-200: #f8fafc;
+  --gray-300: #e3e8ef;
+  --gray-400: #e2e8f0;
+  --gray-500: #cbd5e0;
+  --gray-600: #a0aec0;
+  --gray-700: #a2aebe;
+  --gray-800: #748094;
+  --gray-900: #4c5566;
+  --primary: #ffffff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  ::-webkit-scrollbar {
+    width: 0.75em;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--gray-500);
+    &:hover {
+      background-color: var(--gray-600);
+    }
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background-color: var(--gray-300);
+  }
+}
+
+::selection {
+  background-color: var(--lavender-100);
+  color: var(--white);
+}
+
+html {
+  min-height: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  color: var(--black);
+}
+
+input,
+button {
+  outline: none;
+  border-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#__next {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  max-width: 2000px;
+  transition: color 300ms ease-out 0ms;
+}
+
+.main-content {
+  margin-top: 111px;
+}
+
+@media screen and (min-width: 2000px) {
+  #__next {
+    left: calc(50% - 1000px);
+  }
+}
+
+.work-svg-path-lavender-200 {
+  fill: var(--lavender-200);
+}
+
+.app-loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div[extra-css="loader-app"] {
+    width: 40px;
+    height: 40px;
+  }
+}
